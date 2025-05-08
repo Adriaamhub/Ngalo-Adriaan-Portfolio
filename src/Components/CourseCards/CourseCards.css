@@ -1,0 +1,157 @@
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    margin-top: -80px; /* Pulls the cards upward */
+    z-index: 2;
+    position: relative;
+  }
+  
+  /* Shared Card Styling */
+  .card {
+    width: 700px;
+    overflow: hidden;
+    background-color: #fff;
+    position: relative;
+    background-color: rgb(228, 228, 228);
+    justify-content: center; /* horizontal centering */
+    align-items: center;     /* vertical centering */
+    height: 350px;           /* needed for vertical centering */
+    margin: 0; /* removes space outside cards */
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  
+  /* Card 1: Course Card */
+  .card-top {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px 0;
+    margin-top: 50px;
+  }
+  
+  .badge {
+    background-color: orangered;
+    color: white;
+    font-size: 16px;
+    padding: 5px 15px;
+  }
+  
+  .price {
+    color: orangered;
+    font-size: 16px;
+  }
+  
+  .course-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    margin-top: 10px;
+  }
+  
+  .card-body {
+    padding: 15px;
+  }
+  
+  .card-body h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-top: 15px;
+  }
+  
+  .card-body p {
+    font-size: 14px;
+    color: #444;
+    line-height: 1.5;
+    margin-top: 15px;
+    line-height: 1.8; /* or try 2 for more space */
+  }
+  
+  .card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px 15px;
+    margin-top: 50px;
+  }
+  
+  .author-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .author-img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+  
+  .author-name {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .sales {
+    font-size: 0.85rem;
+    color: #888;
+  }
+  
+  /* Card 2: Background Image Card */
+  .promo-card {
+    height: 350px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-weight: bold;
+    position: relative;
+  }
+  
+  .promo-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+  }
+  
+  .overlay-text {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  
+  /* Responsive Layout */
+  @media (max-width: 768px) {
+    .card-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card {
+      width: 90%;
+    }
+  
+    .promo-card {
+      height: 250px;
+    }
+  
+    .overlay-text {
+      font-size: 1.1rem;
+    }
+  
+    .card-body h1 {
+      font-size: 1.1rem;
+    }
+  
+    .card-body p {
+      font-size: 0.9rem;
+    }
+  }
+  

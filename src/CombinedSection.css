@@ -1,0 +1,16 @@
+.combined-section {
+    display: flex;
+    gap: 40px;
+    padding: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #fafafa;
+  }
+  
+  @media (max-width: 768px) {
+    .combined-section {
+      flex-direction: column;
+      padding: 20px;
+    }
+  }
+  

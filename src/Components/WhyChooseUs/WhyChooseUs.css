@@ -1,0 +1,75 @@
+.why-section {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+  }
+  
+  .why-heading {
+    text-align: center;
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 15px;
+    margin-top: 50px;
+  }
+  
+  .why-paragraph {
+    text-align: center;
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 50px;
+    line-height: 1.8; /* or try 2 for more space */
+  }
+  
+  /* Wrapper for textarea and button inside */
+  .input-wrapper {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .why-textarea {
+    width: 100%;
+    padding: 12px 20px 12px 12px; /* leave space for button inside */
+    font-size: 16px;
+    border: 1px solid #ccc;
+    resize: none;
+    height: 50px;
+    box-sizing: border-box;
+    background-color: rgb(228, 228, 228);
+  }
+  
+  .inline-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 25px;
+    width: 25px;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .plus {
+    background-color: orangered;
+  }
+  
+  .minus {
+    background-color: orangered;
+  }
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    .why-heading {
+      font-size: 26px;
+    }
+  
+    .why-paragraph {
+      font-size: 14px;
+    }
+  
+    .why-textarea {
+      height: 90px;
+    }
+  }
+  

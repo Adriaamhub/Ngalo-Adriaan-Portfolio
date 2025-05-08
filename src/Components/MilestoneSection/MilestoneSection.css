@@ -1,0 +1,97 @@
+.milestone-section {
+    background-image: url('src/assets/cc/milestones.jpg'); /* your background image */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 60px 20px;
+    position: relative;
+  }
+  
+  .milestone-overlay {
+    padding: 40px 0;
+  }
+  
+  .milestone-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .milestone-card {
+    text-align: center;
+    width: 200px;
+  }
+  
+  .milestone-icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+  }
+  
+  .milestone-number {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .milestone-title {
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .milestone-container {
+      gap: 30px;
+    }
+  
+    .milestone-card {
+      width: 45%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .milestone-card {
+      width: 100%;
+    }
+  
+    .milestone-number {
+      font-size: 28px;
+    }
+  
+    .milestone-title {
+      font-size: 16px;
+    }
+  }
+  /* Responsive Styles */
+@media (max-width: 768px) {
+    .milestone-box {
+      width: 45%;
+    }
+  
+    .milestone-number {
+      font-size: 30px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .milestone-container {
+      gap: 30px;
+    }
+  
+    .milestone-box {
+      width: 100%;
+    }
+  
+    .milestone-number {
+      font-size: 28px;
+    }
+  
+    .milestone-title {
+      font-size: 16px;
+    }
+  }
