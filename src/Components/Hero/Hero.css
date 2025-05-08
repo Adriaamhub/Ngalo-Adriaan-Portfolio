@@ -1,0 +1,118 @@
+.hero-section {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.hero-slider {
+  width: 100%;
+  height: 100%;
+  background-size: cover;         /* Ensures image covers entire area */
+  background-position: center;    /* Keeps image centered */
+  background-repeat: no-repeat;   /* Prevents repeating */
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-slides {
+  display: flex;
+  width: 200%;
+  height: 130%;
+  animation: slide-left 10s infinite;
+
+}
+
+.hero-slide {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  text-align: center;
+  color: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  max-width: 800px;
+}
+
+.hero-logo {
+  width: 280px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow for better visibility */
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow for better visibility */
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 50px;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.hero-btn {
+  background-color: #ff8a00;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 16px 16px;
+  color: white;
+  border: none;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.hero-btn:hover {
+  background-color: orangered;
+}
+
+/* Slide Animation */
+@keyframes slide-left {
+  0% { transform: translateX(0); }
+  45% { transform: translateX(0); }
+  55% { transform: translateX(-100%); }
+  100% { transform: translateX(-100%); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-section {
+    height: 80vh;
+  }
+
+  .hero-logo {
+    width: 70px;
+  }
+
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .hero-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,141 @@
+/* Navbar Styles */
+.navbar {
+  background-color: white;
+  color: black;
+  padding: 15px 30px;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+  margin-top: 10px; /* adjust to match the TopBar height */
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+/* Logo image */
+.logo-img {
+  height: 30px; /* Adjust size as needed */
+  margin-right: 10px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  padding: 8px 15px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  border-radius: 5px;
+}
+
+.nav-item a:hover {
+  background: orange;
+ 
+  color: white;
+}
+
+/* Hamburger Menu for Mobile */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.bar {
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+/* Logo title text */
+.logo-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(92, 92, 92);
+  letter-spacing: 1px;
+  white-space: nowrap; /* Prevent wrapping */
+  margin-top: 15px; /* Move title slightly downward */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: black;
+    flex-direction: column;
+    padding: 20px;
+    gap: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .navbar {
+    padding: 10px 30px;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  .nav-item {
+    text-align: center;
+  }
+
+  .dropdown {
+    position: static;
+  }
+}
+
+@media (max-width: 576px) {
+  .logo {
+    font-size: 18px;
+  }
+
+  .menu-toggle {
+    width: 25px;
+    height: 3px;
+  }
+
+  .bar {
+    width: 25px;
+  }
+}
+@media (max-width: 768px) {
+  .logo-title {
+    font-size: 1.3rem;
+  }
+
+  .logo-img {
+    height: 40px;
+  }
+}

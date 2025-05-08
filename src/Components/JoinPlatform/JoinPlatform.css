@@ -1,0 +1,101 @@
+.join-section {
+    background-color: #ffffff;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .join-title {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .join-description {
+    font-size: 16px;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+    line-height: 1.8; /* or try 2 for more space */
+  }
+  
+  /* Button Container */
+  .button-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  
+  /* Main Register Button */
+  .register-button {
+    background-color: #ff6600; /* Orange */
+    color: white;
+    border: none;
+    padding: 14px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 10%; /* full width */
+  }
+  
+.floating-register {
+  position: relative;
+  top: 80px; /* Adjust how far up the button floats over the footer */
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+}
+  
+  .register-button:hover {
+    background-color: #e65c00;
+  }
+  
+  /* Info Button with Arrow */
+  .info-button {
+    background-color: #0066cc; /* Blue */
+    color: white;
+    border: none;
+    padding: 14px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: background-color 0.3s;
+  }
+  
+  .info-button:hover {
+    background-color: orangered;
+  }
+  
+  .arrow {
+    font-size: 18px;
+    transition: transform 0.2s;
+  }
+  
+  .info-button:hover .arrow {
+    transform: translateX(5px);
+  }
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    .join-title {
+      font-size: 26px;
+    }
+  
+    .join-description {
+      font-size: 14px;
+    }
+  
+    .register-button,
+    .info-button {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .button-group {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  
